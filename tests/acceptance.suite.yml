@@ -1,0 +1,19 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: http://suninjuly.github.io/simple_form_find_task.html
+            browser: chrome
+            restart: true
+            window_size: 1024x768
+        - \Helper\Acceptance
+ #        - PhpBrowser:
+
+
+step_decorators: ~        
