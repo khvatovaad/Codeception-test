@@ -8,11 +8,14 @@
 class WorkWithAlert234Cest
 {
 
-    public function _before(AcceptanceTester $I) {
+    public function _before(AcceptanceTester $I)
+    {
     }
+
     // функция для расчета капчи
-    private function func($x) {
-        return log(abs(12*sin((float)$x)));
+    private function func($x)
+    {
+        return log(abs(12 * sin((float)$x)));
     }
 
     // tests
